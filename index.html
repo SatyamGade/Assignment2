@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a Portfolio website. Which shows my skills and many more about me!">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/jpg" href="./android-chrome-192x192.png" />
+    <title>Portfolio Assignment</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <h1>Satyam's Portfolio</h1>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home_section">
+            <div class="intro">
+                <div class="intro-text">
+                    <p>Hi, My name is <span class="intro-name">Satyam Gade</span> and I am passionate about <span
+                            class="intro-coding">Coding</span>. Now learning <span class="intro-coding">Web
+                            Devlopment</span> Technologies.</p>
+                    <button onclick="document.getElementById('project_section').scrollIntoView();"
+                        class="btnFor_projects">Explore Projects</button>
+                    <button onclick="document.getElementById('skills_section').scrollIntoView();"
+                        class="btnFor_skills">Explore Skills</button>
+                </div>
+                <div class="intro-img">
+                    <img class="img" src="./PngItem_1127587.png" alt="image">
+                </div>
+            </div>
+        </section>
+
+        <section class="project_section" id="project_section">
+            <div>
+                <h2>Projects</h2>
+                <div>
+                    <div class="project">
+                        <h3>Portfolio</h3>
+                        <p>Technology Used: HTML, CSS and JavaScript.</p>
+                        <p>Description: This is a Portfolio website which shows information about me.</p>
+                        <p>Link to the Project: <a
+                                href="https://satyamgade.github.io/Portfolio/">https://satyamgade.github.io/Portfolio/</a>
+                        </p>
+                    </div>
+                    <div class="project">
+                        <h3>World Clock & Weather</h3>
+                        <p>Technology Used: HTML, CSS and JavaScript.</p>
+                        <p>Description: This is a website which shows timing and weather of different countries across
+                            the world.</p>
+                        <p>Link to the Project: <a
+                                href="https://satyamgade.github.io/Clock-Weather/">https://satyamgade.github.io/Clock-Weather/</a>
+                        </p>
+                    </div>
+                    <div class="project">
+                        <h3>TextUtils</h3>
+                        <p>Technology Used: React JS and Bootstrap.</p>
+                        <p>Description: In this project, we can manulpulate our text. It means you can convert your text
+                            into uppercase or into lowercase and many more functionlities are provided to you.</p>
+                        <p>Link to the Project: <a
+                                href="https://satyamgade.github.io/TextUtils/">https://satyamgade.github.io/TextUtils/</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills_section" id="skills_section">
+            <div>
+                <h2>Skills</h2>
+                <div class="container">
+                    <div>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Data Structures & Algorithms</li>
+                        <li>HTML</li>
+                    </div>
+                    <div>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React JS</li>
+                        <li>SQL</li>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact_section" id="contact_section">
+            <div>
+                <h2>Contact</h2>
+                <form action="https://formsubmit.co/satyagade8055@gmail.com" method="POST">
+                    <div class="contact_form">
+                        <div class="contact_form_element">
+                            <input type="text" name="name" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="contact_form_element">
+                            <input type="email" name="email" id="email" placeholder="Enter your email address">
+                        </div>
+                        <div class="contact_form_element">
+                            <textarea class="msg" type="text" name="message" id="message" placeholder="Message"></textarea>
+                        </div>
+                        <div class="contact_form_element">
+                            <button class="submitBtn">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <p>&copy; Copyrights 2024. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
